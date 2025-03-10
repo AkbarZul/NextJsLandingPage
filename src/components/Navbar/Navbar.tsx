@@ -12,9 +12,9 @@ export default function Navbar() {
           <div className="flex">
             {/* Primary Nav - hidden on mobile */}
             <div className="hidden md:flex">
-              <Link href="/" className="pr-3 text-[#2E266F] font-medium hover:font-bold hover:border-b-[#2E266F]">Home</Link>
-              <Link href="/about" className="px-3 text-[#2E266F] font-medium hover:font-bold hover:border-b-[#2E266F]">Add Recipe</Link>
-              <Link href="/services" className="px-3 text-[#2E266F] font-medium hover:font-bold hover:border-b-[#2E266F]">Profile</Link>
+            <Link href="/" className="pr-3 text-[#2E266F] font-medium inline-block hover:font-bold hover:underline hover:underline-offset-2">Home</Link>
+              <Link href="/about" className="px-3 text-[#2E266F] font-medium hover:font-bold hover:underline hover:underline-offset-2">Add Recipe</Link>
+              <Link href="/services" className="px-3 text-[#2E266F] font-medium hover:font-bold hover:underline hover:underline-offset-2">Profile</Link>
             </div>
           </div>
           
@@ -39,11 +39,9 @@ export default function Navbar() {
       
       {/* Mobile Menu */}
       <div className={`md:hidden ${isOpen ? 'block' : 'hidden'}`}>
-        <Link href="/" className="block py-2 px-4 text-sm hover:bg-gray-700 text-gray-200 hover:text-white">Home</Link>
-        <Link href="/about" className="block py-2 px-4 text-sm hover:bg-gray-700 text-gray-200 hover:text-white">About</Link>
-        <Link href="/services" className="block py-2 px-4 text-sm hover:bg-gray-700 text-gray-200 hover:text-white">Services</Link>
-        <Link href="/contact" className="block py-2 px-4 text-sm hover:bg-gray-700 text-gray-200 hover:text-white">Contact</Link>
-        <Link href="/login" className="block py-2 px-4 text-sm bg-blue-500 text-white m-4 rounded-md text-center">Login</Link>
+        <Link href="/" className="block py-2 px-4 text-[#2E266F] font-medium hover:font-bold hover:underline hover:underline-offset-2">Home</Link>
+        <Link href="/about" className="block py-2 px-4 text-[#2E266F] font-medium hover:font-bold hover:underline hover:underline-offset-2">About</Link>
+        <Link href="/services" className="block py-2 px-4 text-[#2E266F] font-medium hover:font-bold hover:underline hover:underline-offset-2">Services</Link>
       </div>
     </nav>
   )
