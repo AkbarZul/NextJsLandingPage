@@ -59,7 +59,7 @@ module.exports = {
         'yellow-10': '#FFF3CD',
 
         surface: '#F5F5F7',
-        'surface-disable': '#DEE2E7',
+        'surface-disable': '#C4C4C4',
 
         magenta: '#DC3545',
 
@@ -67,7 +67,7 @@ module.exports = {
 
         cyan: '#00AEEF',
 
-        link: '#0D6EFD',
+        link: '#2E266F',
 
         'line-active': '#DEE2E6',
         'line-disable': '#ADB5BC',
