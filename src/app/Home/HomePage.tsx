@@ -2,10 +2,46 @@
 
 import React from "react";
 import Image from "next/image";
-import { HomeImage, NewRecipeImage, PopularImage } from "@/assets/png";
+import {
+  BananaSmothie,
+  BombChicken,
+  ChickenKare,
+  HomeImage,
+  IndianSalad,
+  LavaCake,
+  NewRecipeImage,
+  PopularImage,
+  SugarSalmon,
+} from "@/assets/png";
 import Title from "@/components/Title";
 
 const HomePage = () => {
+  const popularRecipe = [
+    {
+      img: ChickenKare,
+      title: "Chicken Kare",
+    },
+    {
+      img: BombChicken,
+      title: "Bomb Chicken",
+    },
+    {
+      img: BananaSmothie,
+      title: "Banana Smothie Pop",
+    },
+    {
+      img: LavaCake,
+      title: "Coffe Lava Cake",
+    },
+    {
+      img: SugarSalmon,
+      title: "Sugar Salmon",
+    },
+    {
+      img: IndianSalad,
+      title: "Indian Salad",
+    },
+  ];
   return (
     <div className="relative px-4 xl:px-[110px] mt-28">
       <div className="hidden xl:block absolute top-0 -mt-[300px] right-0 xl:w-[500px] w-full h-[1200px] bg-yellow-500 -z-10"></div>
@@ -81,6 +117,16 @@ const HomePage = () => {
       </div>
 
       <Title title="Popular Recipe" />
+      <div className="grid grid-cols-1 xl:grid-cols-3 gap-4">
+        {popularRecipe.map((data, i) => (
+          <div key={i} className="relative">
+            <Image alt={data.title} src={data.img} width={500} height={500} />
+            <p className="absolute bottom-0 left-0 text-[#3F3A3A] text-3xl font-semibold p-4">
+              {data.title}
+            </p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
