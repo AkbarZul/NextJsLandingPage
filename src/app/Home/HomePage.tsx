@@ -125,7 +125,7 @@ const HomePage = () => {
               src={data.img}
               width={500}
               height={500}
-              className="transition-transform duration-300 hover:scale-105"
+              className="transition-transform duration-300 hover:scale-105 hover:cursor-pointer"
             />
             <p className="absolute bottom-0 left-0 text-[#3F3A3A] text-3xl font-semibold p-4">
               {data.title}

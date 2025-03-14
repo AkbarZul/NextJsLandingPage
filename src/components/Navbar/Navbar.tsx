@@ -21,7 +21,7 @@ export default function Navbar() {
                 Home
               </Link>
               <Link
-                href="/about"
+                href="/AddRecipe"
                 className="px-3 text-[#2E266F] font-medium hover:font-bold hover:underline hover:underline-offset-2"
               >
                 Add Recipe
