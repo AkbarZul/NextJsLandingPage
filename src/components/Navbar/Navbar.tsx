@@ -41,7 +41,7 @@ export default function Navbar() {
               <Image src={User} alt="icon" width={24} height={24} />
             </div>
             <Link
-              href="/login"
+              href="/Login"
               className="py-2 px-3 text-white rounded-md transition duration-300"
             >
               Login
