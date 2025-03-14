@@ -9,6 +9,7 @@ export default function Navbar() {
 
   return (
     <nav>
+      <div className="absolute hidden xl:block top-0 right-0 xl:w-[500px] w-full h-[1500px] bg-yellow-500 -z-10"></div>
       <div className="mx-auto px-4 xl:px-[110px]">
         <div className="flex justify-between mt-[67px]">
           <div className="flex">

@@ -7,6 +7,7 @@ import { HomeImage } from "@/assets/png";
 const HomePage = () => {
   return (
     <div className="relative px-4 xl:px-[110px] mt-28">
+      <div className="hidden xl:block absolute top-0 right-0 xl:w-[500px] w-full h-[1500px] bg-yellow-500 -z-10"></div>
       {/* Bagian atas */}
       <div className="flex flex-col xl:flex-row xl:justify-between xl:items-center">
         <div>
