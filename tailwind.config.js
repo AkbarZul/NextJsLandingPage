@@ -45,43 +45,6 @@ module.exports = {
         '7xl': 1200,
         '8xl': 1280
       },
-      colors: {
-        red: '#C42127',
-        'red-10': '#F3D3D4',
-
-        blue: '#0E3178',
-        'blue-10': '#E7F1FF',
-
-        green: '#198754',
-        'green-10': '#E0F2D8',
-
-        yellow: '#EAB308',
-        'yellow-10': '#FFF3CD',
-
-        surface: '#F5F5F7',
-        'surface-disable': '#C4C4C4',
-
-        magenta: '#DC3545',
-
-        overlay: '#00000080',
-
-        cyan: '#00AEEF',
-
-        link: '#2E266F',
-
-        'line-active': '#DEE2E6',
-        'line-disable': '#ADB5BC',
-
-        silver: '#737373',
-
-        platinum: '#B6B6B6',
-
-        unactive: '#ADB5BD',
-
-        heart: '#9C1B20',
-
-        black: '#212529'
-      },
       borderRadius: {
         '4xl': '2rem' // 32px
       },
