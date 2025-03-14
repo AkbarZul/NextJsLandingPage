@@ -120,7 +120,13 @@ const HomePage = () => {
       <div className="grid grid-cols-1 xl:grid-cols-3 gap-4">
         {popularRecipe.map((data, i) => (
           <div key={i} className="relative">
-            <Image alt={data.title} src={data.img} width={500} height={500} />
+            <Image
+              alt={data.title}
+              src={data.img}
+              width={500}
+              height={500}
+              className="transition-transform duration-300 hover:scale-105"
+            />
             <p className="absolute bottom-0 left-0 text-[#3F3A3A] text-3xl font-semibold p-4">
               {data.title}
             </p>
