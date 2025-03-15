@@ -1,11 +1,14 @@
-import React from 'react'
+import MainLayout from "@/components/Layout/MainLayout";
+import React from "react";
 
 const AddRecipe = () => {
   return (
     <div>
-      <p className='text-black'>Add Recipe</p>
+      <MainLayout>
+        <p className="text-black">Add Recipe</p>
+      </MainLayout>
     </div>
-  )
-}
+  );
+};
 
-export default AddRecipe
+export default AddRecipe;

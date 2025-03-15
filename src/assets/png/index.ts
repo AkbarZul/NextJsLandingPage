@@ -7,6 +7,8 @@ import BananaSmothie from "./Rectangle 316.png";
 import LavaCake from "./Rectangle 317.png";
 import SugarSalmon from "./Rectangle 318.png";
 import IndianSalad from "./Rectangle 319.png";
+import LoginImage from "./LoginImage.png";
+import Logo from "./Logo.png";
 
 export {
   HomeImage,
@@ -18,4 +20,6 @@ export {
   LavaCake,
   SugarSalmon,
   IndianSalad,
+  LoginImage,
+  Logo
 };
