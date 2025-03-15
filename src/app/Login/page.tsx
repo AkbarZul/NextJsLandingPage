@@ -1,11 +1,16 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { LoginImage, Logo } from "@/assets/png";
-import Button from "@/components/Button/Button";
+import Button from "@/components/Button";
+import Checkbox from "@/components/Checkbox";
 
 const LoginPage = () => {
+  const [checked, setChecked] = useState(false);
+  const handleChecked = () => {
+    setChecked(!checked);
+  };
   return (
     <div className="grid grid-cols-1 xl:grid-cols-2 min-h-screen">
       <div className="relative flex items-center">
@@ -36,11 +41,17 @@ const LoginPage = () => {
         <p className="text-[#8692A6] text-lg">
           Log in into your existing account
         </p>
+        <Checkbox
+          label="I agree to terms & conditions"
+          checked={checked}
+          onChange={handleChecked}
+          className="my-8"
+        />
         <Button
           variant="default"
           theme="primary"
           width="full"
-          className="mt-8 hover:cursor-pointer"
+          className="hover:cursor-pointer"
           size="lg"
         >
           Login

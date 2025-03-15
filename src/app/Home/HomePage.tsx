@@ -14,7 +14,7 @@ import {
   SugarSalmon,
 } from "@/assets/png";
 import Title from "@/components/Title";
-import Button from "@/components/Button/Button";
+import Button from "@/components/Button";
 
 const HomePage = () => {
   const popularRecipe = [
