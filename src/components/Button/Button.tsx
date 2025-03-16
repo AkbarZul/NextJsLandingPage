@@ -10,7 +10,7 @@ const themeClasses = {
 }
 
 const variantClasses = {
-  default: 'disabled:bg-yellow-500 disabled:text-white',
+  default: 'disabled:bg-[#8692A6] disabled:text-white',
   outline:
     'bg-transparent border-[1.5px] disabled:border-0 disabled:bg-yellow-500 disabled:text-white',
   text: 'bg-transparent disabled:text-[#EFC81A]'
