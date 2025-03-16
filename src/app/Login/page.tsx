@@ -48,7 +48,9 @@ const LoginPage = () => {
       {/* Form Login */}
       <div className="flex flex-col justify-center items-center max-w-xl w-full">
         <p className="text-[#EFC81A] text-3xl font-bold mb-8">Welcome</p>
-        <p className="text-[#8692A6] text-lg">Log in into your existing account</p>
+        <p className="text-[#8692A6] text-lg">
+          Log in into your existing account
+        </p>
 
         <TextField
           control={control}
@@ -63,24 +65,35 @@ const LoginPage = () => {
           placeholder="Password"
         />
 
-        <Checkbox
-          label="I agree to terms & conditions"
-          checked={checked}
-          onChange={handleChecked}
-          className="my-8"
-        />
+        <div className="flex w-full">
+          <Checkbox
+            label="I agree to terms & conditions"
+            checked={checked}
+            onChange={handleChecked}
+            className="my-8"
+          />
+        </div>
 
         <Button
           type="submit"
           variant="default"
           theme="primary"
           width="full"
-          className="hover:cursor-pointer"
+          className="hover:cursor-pointer h-16 rounded-lg"
           size="lg"
           disabled={!checked}
         >
           Login
         </Button>
+        <div className="flex w-full justify-end">
+          <p className="text-[#999999] text-xs font-bold mt-4">
+            Forgot Password ?
+          </p>
+        </div>
+
+        <p className="text-[#999999] text-sm font-semibold mt-8">
+          Don’t have an account? <span className="text-[#EFC81A]">Sign Up</span>
+        </p>
       </div>
     </div>
   );
